@@ -14,5 +14,8 @@
     "name": "Daniel",
     "email": "1602268076@qq.com"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "url": "https://github.com/DoubleMingZMM/eslint-config-daniel.git"
+  }
 }
