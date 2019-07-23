@@ -4,7 +4,7 @@
  * @Author: Daniel
  * @Date: 2019-07-23 12:13:25
  * @LastEditors: sueRimn
- * @LastEditTime: 2019-07-23 15:50:20
+ * @LastEditTime: 2019-07-23 16:15:09
  */
 module.exports = {
   // 以当前目录为根目录，不再向上查找 .eslintrc.js
@@ -17,7 +17,7 @@ module.exports = {
   },
   extends: ['./index.js'],
   plugins: [
-    // eslint 支持 react 所对应的插件（eslint-plugin-vue）
+    // eslint 支持 React 所对应的插件（eslint-plugin-vue）
     'vue'
   ],
   rules: {
