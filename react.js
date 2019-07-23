@@ -4,7 +4,7 @@
  * @Author: Daniel
  * @Date: 2019-07-23 12:13:25
  * @LastEditors: sueRimn
- * @LastEditTime: 2019-07-23 14:53:48
+ * @LastEditTime: 2019-07-23 15:50:00
  */
 module.exports = {
     // 以当前目录为根目录，不再向上查找 .eslintrc.js
@@ -16,6 +16,10 @@ module.exports = {
       parser: 'babel-eslint',
     },
     extends: ['./index.js'],
+    plugins: [
+        // eslint 支持 react 所对应的插件（eslint-plugin-react）
+        'react'
+    ],
     rules: {
       // 基本配置
       'strict': 0,

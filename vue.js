@@ -4,7 +4,7 @@
  * @Author: Daniel
  * @Date: 2019-07-23 12:13:25
  * @LastEditors: sueRimn
- * @LastEditTime: 2019-07-23 14:54:05
+ * @LastEditTime: 2019-07-23 15:50:20
  */
 module.exports = {
   // 以当前目录为根目录，不再向上查找 .eslintrc.js
@@ -16,6 +16,10 @@ module.exports = {
     parser: 'babel-eslint',
   },
   extends: ['./index.js'],
+  plugins: [
+    // eslint 支持 react 所对应的插件（eslint-plugin-vue）
+    'vue'
+  ],
   rules: {
     // 可能出现的错误
     // 禁止重复的二级键名

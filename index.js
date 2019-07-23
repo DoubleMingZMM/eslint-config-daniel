@@ -4,7 +4,7 @@
  * @Author: Daniel
  * @Date: 2019-07-23 12:13:25
  * @LastEditors: sueRimn
- * @LastEditTime: 2019-07-23 12:40:38
+ * @LastEditTime: 2019-07-23 15:49:52
  */
 module.exports = {
   'root': true,
@@ -34,9 +34,7 @@ module.exports = {
   // required to lint *.vue files
   plugins: [
       // eslint 支持 html 所对应的插件（eslint-plugin-html）
-      'html',
-      // eslint 支持 react 所对应的插件（eslint-react-plugin）
-      'react'
+      'html'
   ],
   // check if imports actually resolve
   'settings': {
