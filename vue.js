@@ -4,7 +4,7 @@
  * @Author: Daniel
  * @Date: 2019-07-23 12:13:25
  * @LastEditors: sueRimn
- * @LastEditTime: 2019-07-23 12:36:26
+ * @LastEditTime: 2019-07-23 14:54:05
  */
 module.exports = {
   // 以当前目录为根目录，不再向上查找 .eslintrc.js
@@ -15,7 +15,7 @@ module.exports = {
   parserOptions: {
     parser: 'babel-eslint',
   },
-  extends: ['plugin:vue/essential', './index.js'],
+  extends: ['./index.js'],
   rules: {
     // 可能出现的错误
     // 禁止重复的二级键名
