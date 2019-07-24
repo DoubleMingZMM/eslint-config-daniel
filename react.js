@@ -3,8 +3,8 @@
  * @version: 1.0.0
  * @Author: Daniel
  * @Date: 2019-07-23 12:13:25
- * @LastEditors: sueRimn
- * @LastEditTime: 2019-07-23 15:50:00
+ * @LastEditors: Daniel
+ * @LastEditTime: 2019-07-24 17:08:17
  */
 module.exports = {
     // 以当前目录为根目录，不再向上查找 .eslintrc.js
@@ -118,7 +118,7 @@ module.exports = {
       'react/require-render-return': 'error',
       // @fixable 组件内没有 children 时，必须使用自闭和写法
       // @off 没必要限制
-      'react/self-closing-comp': 'off',
+      'react/self-closing-comp': 'error',
       // @fixable 组件内方法必须按照一定规则排序
       'react/sort-comp': 'error',
       // propTypes 的熟悉必须按照字母排序
@@ -141,7 +141,7 @@ module.exports = {
       ],
       // @fixable 结束标签必须与开始标签的那一行对齐
       // @off 已经在 jsx-indent 中限制了
-      'react/jsx-closing-tag-location': 'off',
+      'react/jsx-closing-tag-location': 'error',
       // @fixable 大括号内前后禁止有空格
       'react/jsx-curly-spacing': [
           'error',
@@ -173,18 +173,23 @@ module.exports = {
       // @fixable jsx 的 children 缩进必须为四个空格
       'react/jsx-indent': [
           'error',
-          4
+          2
       ],
       // @fixable jsx 的 props 缩进必须为四个空格
       'react/jsx-indent-props': [
           'error',
-          4
+          2
       ],
       // 数组中的 jsx 必须有 key
       'react/jsx-key': 'error',
       // @fixable 限制每行的 props 数量
       // @off 没必要限制
-      'react/jsx-max-props-per-line': 'off',
+      'react/jsx-max-props-per-line': [
+          'error', 
+          {
+              'maximum': 1
+          }
+      ],
       // jsx 中禁止使用 bind
       // @off 太严格了
       'react/jsx-no-bind': 'off',
@@ -204,7 +209,13 @@ module.exports = {
       'react/jsx-pascal-case': 'error',
       // @fixable props 必须排好序
       // @off 没必要限制
-      'react/jsx-sort-props': 'off',
+      'react/jsx-sort-props': [
+          'error', 
+          {
+              'callbacksLast': true, 
+              'shorthandFirst': true,
+          }
+      ],
       // @fixable jsx 的开始和闭合处禁止有空格
       'react/jsx-tag-spacing': [
           'error',
